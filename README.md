@@ -24,11 +24,17 @@ A modern, responsive Movie and TV Series web application built with **React**, p
 
 src/
 ├── Components/ # UI blocks (Carousel, Posters, Menu)
+
 ├── Pages/ # Page-level routes (Home, Movies, Series)
+
 ├── Context/ # React Context API for My List
-├── Config/ # Firebase config
+
+├── Config/ # Firebase
+
 ├── Styles/ # Custom CSS
+
 ├── App.js # Main component
+
 └── index.js # Entry point
 
 ---
@@ -47,6 +53,7 @@ src/
 ### 1. Clone the Repository
 
 git clone https://github.com/your-username/movie-app.git
+
 cd movie-app
 
 ### 2. Install Dependencies
@@ -58,10 +65,15 @@ npm install
 Replace the default TMDB API key in these files:
 
 Carousel.js
+
 PopularMovies.js
+
 PopularSeries.js
+
 SearchBox.js
+
 MovieDetails.js
+
 SerieDetails.js
 
 ### 4. Firebase Setup (Optional but Recommended)
@@ -79,7 +91,9 @@ npm install firebase
 ### 5. Run the App 🚀
 
 If using Node v16 or lower:
+
 npm start
+
 If using Node v17 or higher:
 
 # For Windows PowerShell
@@ -87,9 +101,8 @@ If using Node v17 or higher:
 $env:NODE_OPTIONS="--openssl-legacy-provider"
 
 Then run:
-npm star
 
-### Preview
+npm star
 
 🧑‍💻 Author
 Developed by Irteja Mahmud
