@@ -1,25 +1,95 @@
-# Movies & TV shows Search App with React JS
+# 🎬 Movie App
 
-A web application to discover and save your favorite movies and TV shows using The Movie Database API.
+A modern, responsive Movie and TV Series web application built with **React**, powered by the [TMDB API](https://www.themoviedb.org/documentation/api), and enhanced with Firebase features like a personalized **My List**.
 
-#### [Visite website](http://movie-app.luciapeterlin.surge.sh)
-![Alt Text](https://media.giphy.com/media/qdEhVItAxhYeK3CMV7/giphy.gif)
+<br>
 
+![Movie App Preview](./preview.png) <!-- Make sure the image is named preview.png or update the path -->
 
+---
 
-# About this project
+## 📌 Features
 
-## Sections:
+- 🔍 Search for trending movies and TV series
+- 📺 Browse popular **Movies** and **Series**
+- 🧾 View detailed info: titles, posters, rating, overview
+- ⭐ Add movies/series to **My List** (Firebase)
+- 🎞️ Full-screen carousel for trending content
+- 📱 Responsive layout using **React-Bootstrap**
+- 🌐 Default language: **English**
 
-1) HOME: Carousel with the latest trends in movies and tv shows. List of most popular movies and series. 
-2) SEARCH: Search for movies, TV shows and actors. Results in English and Spanish. The search engine can be accessed from any section of the application.
-3) MOVIES / TV SHOWS: In this section you can filter movies and series by genre and the results can be sorted by date (most recent), popularity and alphabetical order.
-4) MOVIES & TV SHOWS DETAILS: Shows more information about a particular movie or series. Includes a button to add to My Favorites List.
-5) MY LIST: All the movies and series added as favorites by the user are stored in this section.
+---
 
-## To use this project: 
+## 📁 Project Structure
 
-1) Download or clone the repository.
-2) Open the console and on the project folder run the npm install command.
-3) Once installed, run the npm start command.
-4) Open http://localhost:3000 in the browser.
+src/
+├── Components/ # UI blocks (Carousel, Posters, Menu)
+├── Pages/ # Page-level routes (Home, Movies, Series)
+├── Context/ # React Context API for My List
+├── Config/ # Firebase config
+├── Styles/ # Custom CSS
+├── App.js # Main component
+└── index.js # Entry point
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React, React Router, Bootstrap
+- **Data Source:** TMDB API
+- **State Management:** React Hooks, Context
+- **Firebase:** Firestore (My List), Auth (optional)
+
+---
+
+## 🔑 Setup Instructions
+
+### 1. Clone the Repository
+
+git clone https://github.com/your-username/movie-app.git
+cd movie-app
+
+### 2. Install Dependencies
+
+npm install
+
+### 3. Add TMDB API Key
+
+Replace the default TMDB API key in these files:
+
+Carousel.js
+PopularMovies.js
+PopularSeries.js
+SearchBox.js
+MovieDetails.js
+SerieDetails.js
+
+### 4. Firebase Setup (Optional but Recommended)
+
+Create a Firebase project: https://firebase.google.com
+
+Enable Firestore
+Copy the config snippet and paste it into:
+
+src/Config/firebase.js
+Install Firebase SDK:
+
+npm install firebase
+
+### 5. Run the App 🚀
+
+If using Node v16 or lower:
+npm start
+If using Node v17 or higher:
+
+# For Windows PowerShell
+
+$env:NODE_OPTIONS="--openssl-legacy-provider"
+
+Then run:
+npm star
+
+### Preview
+
+🧑‍💻 Author
+Developed by Irteja Mahmud
