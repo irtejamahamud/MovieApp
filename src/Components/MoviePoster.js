@@ -9,16 +9,16 @@ function MoviePoster(result) {
 
 	return (
 		<div className="poster-container">
-			<Link to={"/peliculas/"+result.id}>
-			  	{result.poster_path ? 
-			  	(<img src={image + result.poster_path}/>) 
-			  	:
-				(<div className="BiConfused-container">
-	         	<BiConfused className="BiConfused"/>
-	            <p className="no-image">Imagen no disponible</p>
-	            </div>
-	        	)}
-			 </Link>
+			<Link to={"/movies/" + result.id}>
+				{result.poster_path ?
+					(<img src={image + result.poster_path} alt="Movie Poster" />)
+					:
+					(<div className="BiConfused-container">
+						<BiConfused className="BiConfused" />
+						<p className="no-image">Image not available</p>
+					</div>
+					)}
+			</Link>
 		</div>
 	)
 

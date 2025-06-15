@@ -9,20 +9,20 @@ function SearchResults(movie) {
 
   return (
     <div>
-      {movie.media_type == "movie" ? 
+      {movie.media_type === "movie" ? 
 
-        (<Link to={"/peliculas/"+movie.id}>
+        (<Link to={"/movies/" + movie.id}>
           <div className="search-result-container">
             {movie.poster_path ? 
             (<img
-            className="search-result-image"
-            src={image + movie.poster_path}
-            alt={`${movie.title} Poster`}/>
+              className="search-result-image"
+              src={image + movie.poster_path}
+              alt={`${movie.title} Poster`}/>
             ) 
             :
             (<div className="no-image-container">
-            <BiConfused className="BiConfused"/>
-            <p className="no-image-text">Imagen no disponible</p>
+              <BiConfused className="BiConfused"/>
+              <p className="no-image-text">Image not available</p>
             </div>
             )}
           </div>
@@ -30,7 +30,7 @@ function SearchResults(movie) {
 
        : 
 
-       (<Link to={"/series/"+movie.id}>
+       (<Link to={"/tv/" + movie.id}>
           <div className="search-result-container">
             {movie.poster_path ? 
             (<img
@@ -40,8 +40,8 @@ function SearchResults(movie) {
             ) 
             : 
             (<div className="no-image-container">
-            <BiConfused className="BiConfused"/>
-            <p className="no-image-text">Imagen no disponible</p>
+              <BiConfused className="BiConfused"/>
+              <p className="no-image-text">Image not available</p>
             </div>
             )}
           </div>

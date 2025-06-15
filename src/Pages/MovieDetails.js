@@ -64,7 +64,7 @@ function DetallePelicula(props){
 			      				<h5 className="movie-original-title">({pelicula.original_title}) - <Badge variant="warning" ><BsFillStarFill/>{pelicula.vote_average}</Badge></h5>
 			    			</Card.Text>
 			    			<Card.Text>{pelicula.overview}</Card.Text>
-							<Button variant="danger" onClick={()=>saveFavs(pelicula)}><BsHeartFill/> Agregar a Mi Lista</Button>
+							<Button variant="danger" onClick={()=>saveFavs(pelicula)}><BsHeartFill/> Add to My List</Button>
 			    			<AlertCustom variant={alert.variant} text={alert.text} />
 					    </div>
 					</Card.ImgOverlay>

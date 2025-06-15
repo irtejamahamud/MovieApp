@@ -11,15 +11,15 @@ function MyList (){
 
 	return(
 		<>
-			<h3>Mi Lista</h3>
+			<h3>My List</h3>
 			<div className="favorites-container">
-				{myListFavorites.map((pelicula) => (
-					<div className="favoriteposter-container">
+				{myListFavorites.map((movie) => (
+					<div className="favoriteposter-container" key={movie.id}>
 						<img 
 							className="favoriteimage-container"
-							src={image + pelicula.poster_path}
-							alt={pelicula.title}
-							/>
+							src={image + movie.poster_path}
+							alt={movie.title}
+						/>
 					</div>
 				))}
 			</div>

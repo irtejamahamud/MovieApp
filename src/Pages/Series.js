@@ -49,21 +49,21 @@ function Series(){
 		<>
 			{spinner &&
 				<Loading />
-      		}
+			}
 
-			<h3>Series</h3>
+			<h3>TV Series</h3>
 
 			<div className="select-container">
-				<h6>Seleccionar género:</h6>
+				<h6>Select genre:</h6>
 				<Form.Control className="select" as="select" onChange={handleChange} name="genero">
-					<option value="">Todas los géneros</option>
+					<option value="">All genres</option>
 						{genreOptions.map((genreOption)=><option value={genreOption.id}>{genreOption.name}</option>)}
 				</Form.Control>
-				<h6>Ordenar por:</h6>
+				<h6>Sort by:</h6>
 				<Form.Control className="select" as="select"onChange={handleChange} name="orden">
-					<option value="popularity.desc" >Más populares</option>			
-					<option value="vote_average.desc" >Más votadas</option>
-					<option value="first_air_date.desc" >Más recientes</option>
+					<option value="popularity.desc" >Most popular</option>			
+					<option value="vote_average.desc" >Highest rated</option>
+					<option value="first_air_date.desc" >Most recent</option>
 				</Form.Control>
 			</div>
 
