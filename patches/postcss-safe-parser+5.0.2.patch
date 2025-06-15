@@ -1,0 +1,14 @@
+diff --git a/node_modules/postcss-safe-parser/lib/safe-parser.js b/node_modules/postcss-safe-parser/lib/safe-parser.js
+index 809422a..78f02ad 100644
+--- a/node_modules/postcss-safe-parser/lib/safe-parser.js
++++ b/node_modules/postcss-safe-parser/lib/safe-parser.js
+@@ -1,6 +1,6 @@
+-let tokenizer = require('postcss/lib/tokenize')
+-let Comment = require('postcss/lib/comment')
+-let Parser = require('postcss/lib/parser')
++const postcss = require('postcss');
++const { tokenizer } = postcss;
++const { Comment, Parser } = postcss;
+ 
+ class SafeParser extends Parser {
+   createTokenizer () {
